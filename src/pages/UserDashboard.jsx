@@ -92,7 +92,7 @@ const XIcon = ({ className = "w-5 h-5" }) => (
 );
 
 
-const BASE_URL = 'http://127.0.0.1:8000';
+const BASE_URL = 'https://api.mawtin.net';
 
 // دالة تنظيف رابط الصورة - مصلحة بالكامل
 const getImageUrl = (path) => {
@@ -247,7 +247,7 @@ const UpdateImages = ({ images }) => {
     return (
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4">
             {images.map((img, imgIdx) => {
-                const url = img?.image_url || img?.url || `http://127.0.0.1:8000/storage/${img?.path}`;
+                const url = img?.image_url || img?.url || `https://api.mawtin.net/storage/${img?.path}`;
                 const isVideo = img?.file_type?.startsWith('video') || 
                                 img?.path?.endsWith('.mp4') || 
                                 img?.path?.endsWith('.mov');
