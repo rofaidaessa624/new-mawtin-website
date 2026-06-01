@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://api.mawtin.net/api',
+    baseURL: 'https://api.mawtin.net',
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
