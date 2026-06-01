@@ -6,7 +6,7 @@ firebase.initializeApp({
   apiKey: "AIzaSyDInU0kY9zKGrXBLVNlURzzxZJd9aPAlnA",
   authDomain: "mawtin-6308b.firebaseapp.com",
   projectId: "mawtin-6308b",
-  storageBucket: "mawtin-6308b.firebasestorage.app",  // ✅ إصلاح: كان appspot.com
+  storageBucket: "mawtin-6308b.firebasestorage.app",  
   messagingSenderId: "1057041831387",
   appId: "1:1057041831387:web:67c955845a44a6a02043fe",
 });

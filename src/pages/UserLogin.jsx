@@ -32,11 +32,9 @@ const UserLogin = ({ onLogin }) => {
 
                 onLogin(client);
 
-                // 1) جلب Firebase Token
                 const fcmToken = await requestForToken();
 
                 if (fcmToken) {
-                    // 2) إرسال التوكن للـ backend
                     await api.post('/v1/client/save-device-token', {
                         client_id: client.id,
                         device_token: fcmToken
